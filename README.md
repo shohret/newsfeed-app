@@ -4,8 +4,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## To Run the Project
-- `npm install`
-- `npm start`, then open [http://localhost:3000](http://localhost:3000)
+Go to project root folder run following commands:
+1. `npm install`
+2. `npm start`, then open [http://localhost:3000](http://localhost:3000)
 
 ## Components
 - Topbar (`/components/Topbar.js`)
