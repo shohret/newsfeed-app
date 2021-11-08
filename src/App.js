@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Data from './news_feed.json';
+import NewsList from "./components/NewsList";
+import TopBar from "./components/TopBar";
+import ScrollToTopBtn from "./components/ScrollToTop";
+import Footer from "./components/Footer";
+import { Header, Segment, Icon } from "semantic-ui-react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    items: Data.items
+  };
+
+  render() {
+    const { items } = this.state;
+    return (
+      <div>
+        <TopBar />
+        <Segment basic padded>
+          {<NewsList items={items} />}
+        </Segment>
+        <Footer />
+        <ScrollToTopBtn />
+      </div>
+    );
+  }
 }
 
 export default App;
