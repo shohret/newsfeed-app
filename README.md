@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## To Run the Project
 - `npm install`
-- `npm start`
+- `npm start`, then open [http://localhost:3000](http://localhost:3000)
 
 ## Components
 - Topbar (`/components/Topbar.js`)
@@ -17,4 +17,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Used React UI Component Library
 [Semantic UI React](https://react.semantic-ui.com/)
-

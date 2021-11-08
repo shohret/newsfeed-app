@@ -4,7 +4,7 @@ import NewsList from "./components/NewsList";
 import TopBar from "./components/TopBar";
 import ScrollToTopBtn from "./components/ScrollToTop";
 import Footer from "./components/Footer";
-import { Header, Segment, Icon } from "semantic-ui-react";
+import { Segment } from "semantic-ui-react";
 
 class App extends React.Component {
   state = {
